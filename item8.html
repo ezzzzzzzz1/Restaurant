@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class='movie-details-container p-5'>
+        <div class='text-center'>
+            <div class='row'>
+                <div class='col-3'>
+                    <img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/08/easy-summer-appetizers-580x852.jpg" class="product-image" alt="Entrees">
+                </div>
+                <div class='details col-9'>
+                    <h3>Fried Apples</h3>
+                    <p>It only takes four ingredients to make fried apples, a favorite southern side dish.</p>
+                    <p>Price: $5</p>
+                    <a href="https://www.tasteofhome.com/recipes/mom-s-fried-apples/" target="_blank" class="btn btn-danger">Learn more</a>
+                    <button class="btn btn-success" onclick="addToCart('Fried Apples', 5)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <h5 class='text-center bg-dark text-white p-2'>REVIEWS</h5>
+    </div>
+
+    <div class="p-5">
+        <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+    </div>
+
+    <script src="carts.js"></script>
+</body>
+</html>
