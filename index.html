@@ -8,8 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -46,45 +46,41 @@
             </ul>
         </div>
     </nav> -->
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-          <div class="container-fluid">
-              <!-- Toggle button -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-              </button>
-  
-              <!-- Collapsible wrapper -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <!-- Navbar brand -->
-                  <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                      <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo" loading="lazy" />
-                  </a>
-                  <!-- Left links -->
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#food2">Menu</a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- Collapsible wrapper -->
-  
+       <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo" loading="lazy" />
+          </a>
+          <!-- Toggle button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- Left links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#food2">Menu</a>
+                  </li>
+              </ul>
               <!-- Right elements -->
               <div class="d-flex align-items-center">
                   <!-- Icon -->
                   <a class="text-reset me-3 mr-5" href="cart.html">
                       <i class="fas fa-shopping-cart"></i>
                   </a>
-  
                   <!-- Notifications -->
                   <div class="dropdown">
-                      <a class="text-reset me-3 dropdown-toggle hidden-arrow mr-5" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="text-reset me-3 dropdown-toggle hidden-arrow mr-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
                           <i class="fas fa-bell"></i>
                           <span class="badge rounded-pill badge-notification bg-danger">1</span>
                       </a>
@@ -94,10 +90,9 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
                   </div>
-  
                   <!-- Avatar -->
                   <div class="dropdown">
-                      <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-toggle="dropdown" aria-expanded="false">
                           <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Avatar" loading="lazy" />
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
@@ -109,16 +104,16 @@
               </div>
               <!-- Right elements -->
           </div>
-      </nav>
-      <!-- Navbar -->
+      </div>
+  </nav>
+  <!-- Navbar -->
     <section class="showcase-area" id="showcase">
         <div class="showcase-container">
           <h1 class="main-title" id="home">Welcome to My Restaurant</h1>
           <a href="#food2" class="btn btn-primary">Menu</a>
         </div>
       </section>
-
-
+  
       <section id="about">
         <div class="about-wrapper container">
           <div class="about-text">
@@ -482,9 +477,9 @@
 
     </body>
     <script src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js" integrity="sha512-IJcEdmWEdmcHqYAd8nKpB4gmnkUI9DyF16OZZOVsDE0Hq2xAwRbRBVQJ7T7BL1GqD2W9DbL0sBbVnCoewxD4JQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-Jn7Y4N7qgy/jJH4CW7TkJoWZaVz/GkW4jsO/5PpBhdBmrFvTlmhpgJ2ZXZRIU0A6I6t+mfexodfbLf/edmd9YQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="nav.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </html>
 
