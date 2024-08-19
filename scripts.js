@@ -7,15 +7,21 @@ function filterPosts() {
     var posts = document.getElementsByClassName('card');
 
     Array.from(posts).forEach(function (post) {
-        var title = post.querySelector('.card-title').textContent.toLowerCase();
-        var text = post.querySelector('.card-text').textContent.toLowerCase();
+        var titleElement = post.querySelector('.card-title');
+        var textElement = post.querySelector('.card-text');
         var price = parseFloat(post.getAttribute('data-price'));
 
-        var matchesSearch = title.includes(input) || text.includes(input);
-        var matchesPrice = filterByPrice(price, selectedPrice);
+        if (titleElement && textElement) {
+            var title = titleElement.textContent.toLowerCase();
+            var text = textElement.textContent.toLowerCase();
+            var matchesSearch = title.includes(input) || text.includes(input);
+            var matchesPrice = filterByPrice(price, selectedPrice);
 
-        if (matchesSearch && matchesPrice) {
-            post.style.display = 'block';
+            if (matchesSearch && matchesPrice) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
         } else {
             post.style.display = 'none';
         }
