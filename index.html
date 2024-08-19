@@ -13,6 +13,43 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+  /* Custom Styles */
+  .main-title {
+      font-size: 3rem;
+      font-weight: bold;
+  }
+
+  .navbar-nav .nav-link {
+      margin-right: 15px;
+  }
+
+  .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+  }
+
+  .card-price {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #333;
+  }
+
+  @media (max-width: 768px) {
+      .main-title {
+          font-size: 2rem;
+      }
+
+      .navbar-nav {
+          text-align: center;
+      }
+
+      .navbar-nav .nav-link {
+          margin-right: 0;
+          margin-bottom: 10px;
+      }
+  }
+</style>
 <body>
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">My Restaurant</a>
@@ -47,72 +84,47 @@
         </div>
     </nav> -->
        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0" href="#">
-              <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15" alt="MDB Logo" loading="lazy" />
-          </a>
-          <!-- Toggle button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse dropdown" id="navbarNav">
-              <!-- Left links -->
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#food2">Menu</a>
-                  </li>
-              </ul>
-              <!-- Right elements -->
-              <div class="d-flex align-items-center">
-                  <!-- Icon -->
-                  <a class="text-reset me-3 mr-5" href="cart.html">
-                      <i class="fas fa-shopping-cart"></i>
-                  </a>
-                  <!-- Notifications -->
-                  <div class="dropdown">
-                      <a class="text-reset me-3 dropdown-toggle hidden-arrow mr-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                          <i class="fas fa-bell"></i>
-                          <span class="badge rounded-pill badge-notification bg-danger">1</span>
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Some news</a></li>
-                          <li><a class="dropdown-item" href="#">Another news</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                  </div>
-                  <!-- Avatar -->
-                  <div class="dropdown">
-                      <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-toggle="dropdown" aria-expanded="false">
-                          <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Avatar" loading="lazy" />
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                          <li><a class="dropdown-item" href="#">My profile</a></li>
-                          <li><a class="dropdown-item" href="#">Settings</a></li>
-                          <li><a class="dropdown-item" href="#">Logout--</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- Right elements -->
-          </div>
-      </div>
-  </nav>
-  <!-- Navbar -->
-    <section class="showcase-area" id="showcase">
-        <div class="showcase-container">
-          <h1 class="main-title" id="home">Welcome to My Restaurant</h1>
-          <a href="#food2" class="btn btn-primary">Menu</a>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">My Restaurant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#food2">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </section>
+    </nav>
+    
+  <!-- Navbar -->
+  <section class="showcase-area text-center text-md-left py-5" id="showcase">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="main-title">Welcome to My Restaurant</h1>
+                <a href="#food2" class="btn btn-primary mt-3 ">Menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+
   
       <section id="about">
         <div class="about-wrapper container">
@@ -132,7 +144,7 @@
           </div>
         </div>
       </section>
-      <section id="food">
+      <!-- <section id="food">
         <h2>Types of food</h2>
         <div class="food-container container">
           <div class="food-type appetizer">
@@ -178,8 +190,48 @@
             </div>
           </div>
         </div>
-      </section>
-     
+      </section> -->
+      <section id="food" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Types of Food</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="img-container">
+                            <img src="https://www.spoonforkbacon.com/wp-content/uploads/2021/12/best-appetizer-recipes.jpg" class="card-img-top img-fluid w-100 h-100" alt="Appetizers">
+                            <div class="img-content p-3">
+                                <h3>Appetizers</h3>
+                                <a href="https://en.wikipedia.org/wiki/Hors_d%27oeuvre" class="btn btn-primary mt-2" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="img-container">
+                            <img src="https://media.istockphoto.com/id/1403973419/photo/table-top-of-food-spread-on-table.jpg?s=612x612&w=0&k=20&c=2cROUMurZUtuvqF-bp8lViZ0wDXBNkZBcIjQj2QQlec=" class="card-img-top img-fluid h-100" alt="Entrees">
+                            <div class="img-content p-3">
+                                <h3>Entrees</h3>
+                                <a href="https://en.wikipedia.org/wiki/Entr%C3%A9e" class="btn btn-primary mt-2" target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="img-container">
+                            <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2022/06/LINK-TRAFFIC-18-1200x675.jpg" class="card-img-top img-fluid h-100" alt="Desserts">
+                            <div class="img-content p-3">
+                                <h3>Desserts</h3>
+                                <a href="https://en.wikipedia.org/wiki/Dessert" class="btn btn-primary mt-2 " target="_blank">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
       <section id="food2">
         <h2 class="food text-center mt-2">Our Menu</h2>
         <div class="text-center">
@@ -334,7 +386,7 @@
     <footer
             class="text-center text-lg-start text-dark "
             style="background-color: #ECEFF1"
-            
+            id="footer"
             >
       <!-- Section: Social media -->
       <section
